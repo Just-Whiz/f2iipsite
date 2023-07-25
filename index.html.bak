@@ -1,71 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chris Suy's Website</title>
-    <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-      <!--Navbar with all of the buttons-->
-      <nav id="navbar">
-        <header class="navbar-header">
-          <!--The h1 tag here is overflowing. In my CSS, i have hte overflow set to hidden as a temporary fix for now.-->
-          <h1>Chris Suy's Site</h1>
-          </header>
-            <a href="#Introduction" class="nav-link">Introduction</a>
-            <a href="#Interests" class="nav-link"><span class="important">Interests</span></a>
-            <a href="#Sports" class="nav-link"><span class="important">Sports</span></a>
-            <a href="#Hobbies" class="nav-link"><span class="important">Hobbies</span></a>
-            <a href="#School" class="nav-link"><span class="important">School</span></a>
-            <a href="#Socials" class="nav-link"><span class="important">Socials</span></a>
-            </nav>
-            <main class="main-doc">
-              <section class="main-section" id="Introduction">
-                <header class="Introduction">Introduction</header>
-                <p>
-                  Who am I?
-                  <br>
-                    <code>My name is Christian Suy Pineda. I am a rising sophomore, ready to take on the world as I see fit.</code>
-                </p>
-              </section>
-              <section class="main-section" id="Interests">
-                <header class="Interests">Interests</header>
-                <p>
-                  What am I into?
-                  <br>
-                    <code>Placeholder Text</code>
-                    </p>
-                </section>
-                <section class="main-section" id="Sports">
-                <header class="Sports">Sports</header>
-                <p>
-                  Placeholder text:
-                  <br>
-                    <code>Placeholder Text</code>
-                    </p>
-                </section>
-                <section class="main-section" id="Hobbies">
-                <header class="Hobbies">Hobbies</header>
-                <p>
-                  Placeholder text:
-                  <br>
-                    <code>Placeholder Text</code>
-                    </p>
-                </section>
-                <section class="main-section" id="School">
-                <header class="School">School</header>
-                <p>
-                  Placeholder text:
-                  <br>
-                    <code>Placeholder Text</code>
-                    </p>
-                </section>
-                <section class="main-section" id="Socials">
-                <header class="Socials">Socials</header>
-                <p>
-                  Placeholder text:
-                  <br>
-                    <code>Placeholder Text</code>
-                    </p>
-                  </section>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="all" href="styles.css">
+  </head>
+  <body>
+    <div id="tswcontainer">
+      <header>
+        <!-- start of header section: insert your logo, etc, here -->
+        <p> Placeholder content for your header section. Replace it with your
+          website's logo or name or page title or whatever. </p>
+        <!-- end of header section: insert your logo, etc, above this line --></header>
+      <div id="tswcontent">
+        <div id="tswcontproper">
+          <!-- start of content column: insert your content here -->
+          <h1>Welcome</h1>
+          <p> Placeholder content. Replace everything here with your actual
+            content. </p>
+          <p> If you want a navigation menu for your side column that looks like
+            the one on thesitewizard.com, you can generate your own and
+            customize it, with the <a href="https://www.thesitewizard.com/wizards/css-menu-buttons.shtml">Navigation
+              Menu Wizard</a>. It's free, just like the <a href="https://www.thesitewizard.com/wizards/layout.shtml">Layout
+              Wizard</a> that you used to create this. </p>
+          <p> And if you want a contact form (ie, one that your visitors can use
+            to reach you), go to the <a href="https://www.thesitewizard.com/wizards/feedbackform.shtml">Feedback
+              Form Wizard</a> to create one. Yes, it's free too. </p>
+          <p> Okay, that's it. I've run out of meaningful things to say for this
+            placeholder content, and can't be bothered to think up any more
+            stuff that you're just going to delete anyway. </p>
+          <p> All the best for your site! </p>
+          <!-- end of content column: put your content above this line --> </div>
+      </div>
+      <div id="tswsidecol">
+        <div id="tswsideproper">
+          <!-- start of side column: insert your navigation menu, etc, here -->
+          <div class="vertical-menu">
+            <a href="#" class="active">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact Me</a>
+          </div>
+
+          <!-- end of side column: put your navigation menu, etc, above this line -->
+        </div>
+      </div>
+      <div style="clear: both;"></div>
+      <div id="tswfooter">
+        <!-- start of footer section: insert your copyright notice, etc, here -->
+        <p> Placeholder content for the footer: please replace these words with
+          your real content. </p>
+        <!-- end of footer section: insert your copyright notice, etc, above this line -->
+      </div>
+    </div>
+    
+  </body>
+</html>
