@@ -9,8 +9,7 @@
   </head>
   <body>
     <div id="tswcontainer">
-      <header>
-        <!-- start of header section: insert your logo, etc, here -->
+      <header> <!-- start of header section: insert your logo, etc, here -->
         <h1 id="h1header">Christian Suys' Website</h1>
         <!-- end of header section: insert your logo, etc, above this line --></header>
       <div id="tswcontent">
@@ -35,20 +34,21 @@
       <div id="tswsidecol">
         <div id="tswsideproper">
           <!-- start of side column: insert your navigation menu, etc, here -->
-          <div class="vertical-menu" style="text-align: center;"> <a href="index.html"
-
-              class="active">Home</a> <a href="page1.html#">About Me</a> <a href="page2.html">Portfolio</a>
-            <a href="page3.html">Contact Me</a> </div>
+          <div class="vertical-menu" style="text-align: center;"> 
+            <a href="index.html">Home</a>
+            <a href="page1.html">About Me</a> 
+            <a href="page2.html">Portfolio</a>
+            <a href="page3.html" class="active">Contact Me</a> </div>
           <!-- end of side column: put your navigation menu, etc, above this line -->
         </div>
       </div>
-      <footer>
+      <div style="clear: both;"></div>
+      <div id="tswfooter">
         <!-- start of footer section: insert your copyright notice, etc, here -->
         <p> Placeholder content for the footer: please replace these words with
           your real content. </p>
         <!-- end of footer section: insert your copyright notice, etc, above this line -->
-      </footer>
+      </div>
     </div>
-    
   </body>
 </html>

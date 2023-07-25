@@ -2,27 +2,33 @@ html {
 	background-color: white;
 }
 body {
-	font-family: Arial, Helvetica, sans-serif ;
+	font-family: Arial;
+	min-height: 100vh;
+	display: block;
+	;
 }
 
 header {
 	background-color: #0094FC;
-	border-top: #ffa814 solid 10px;
-	border-left: #ffa814 solid 10px;
+	border-top: #0094FC solid 10px;
+	border-left: #0094FC solid 10px;
 	padding: 3px;
 	height: 100px;
 }
 
 .vertical-menu {
-	width: 12em;
-	display: inline-block;
+	padding-top: 2px;
+	padding-right: 3px;
+	padding-bottom: 3px;
+	margin-left: -5px;
+	text-align: center;
 }
 
 .vertical-menu a {
 	background-color: #eee;
 	color: black;
 	display: block;
-	padding: 1.25em;
+	padding: 1.7em 1.7em 1.7em 2em;
 	text-decoration: none;
 }
 
@@ -31,10 +37,15 @@ header {
 }
 
 .vertical-menu a.active {
-	background-color: #04AA6D;
+	background-color: #0094FC;
 	color: white;
 }
-	
+
+h1#h1header {
+	color: white;
+	margin-left: 5px;
+}
+
 img {
 	max-width: 100% ;
 	width: auto ;
@@ -52,6 +63,8 @@ div#tswsidecol {
 	width: 20% ;
 	color: #000 ;
 	background-color: #fff ;
+	font-weight: bold;
+	
 }
 div#tswcontent {
 	float: right ;
@@ -66,11 +79,12 @@ div#tswcontent {
 	}
 	div#tswcontent {
 		float: none ;
-		width: 100% ;
+		width: 100%;
 	}
+	
 }
 div#tswcontproper {
-	padding-left: 5px ;
+	padding-left: 10px ;
 	padding-right: 5px ;
 }
 div#tswcontainer {
@@ -81,7 +95,16 @@ div#tswsideproper, div#tswothersideproper {
 	padding-left: 5px ;
 	padding-right: 5px ;
 }
-div#tswfooter {
+footer {
+	clear: both;
 	color: #000 ;
-	background-color: #fff ;
+	background-color: #0094FC;
+	padding: 10px;
+	color: white;
+	font-weight: bold;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
 }
