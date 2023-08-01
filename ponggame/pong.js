@@ -28,16 +28,17 @@ function resetGame() {
 }
 
 function resetPaddles() {
-    paddleL = new Paddle(0, 0, paddleLength, paddleWidth, "red");
-    paddleR = new Paddle(boardWidth-paddleWidth, 0, paddleLength, paddleWidth, "blue");
+    paddleL = new Paddle(0, 0, paddleLength, paddleWidth, "white");
+    paddleR = new Paddle(boardWidth-paddleWidth, 0, paddleLength, paddleWidth, "white");
 }
 
 function resetBall() {
-    ball = new Ball(boardWidth/2, boardHeight/2, 1, -2.5, ballRadius, "dodgerblue");
+    ball = new Ball(boardWidth/2, boardHeight/2, 1, -1, ballRadius, "white");
 }
 
 function clearBoard() {
-    ctx.fillStyle = "grey";
+    ctx.fillStyle = "black";
+    ctx.lineWidth = 10;
     ctx.fillRect(0, 0, boardWidth, boardHeight);
 }
 
@@ -62,9 +63,12 @@ function nextTick() {
             }
 
             ball.bounceWall();
-            if (ball.bouncePaddleL(paddleL)) score("right");
-            if (ball.bouncePaddleR(paddleR)) score("left");
-            
+            if (ball.bouncePaddleL(paddleL)) {
+                score("right");
+            }
+            if (ball.bouncePaddleR(paddleR)) {
+                score("left");
+            }
             ball.move();
 
             draw();
@@ -77,6 +81,7 @@ function score(player) {
     if (player == "left") scoreL++;
     if (player == "right") scoreR++;
     
+
     updateScore();
     resetBall();
 }
@@ -84,4 +89,13 @@ function score(player) {
 function updateScore() {
     const scoreboard = document.getElementById("scoreboard");
     scoreboard.innerHTML = `${scoreL} : ${scoreR}`;
+}
+
+function innerLine() {
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.lineTo(10, 10);
+    ctx.strokeStyle = "white";
+    ctx.stroke();
+    ctx.closePath();
 }

@@ -10,7 +10,7 @@ class Paddle {
 
     draw(ctx) {
         ctx.fillStyle = this.c;
-        ctx.strokeStyle = "black";
+        ctx.strokeStyle = "white";
 
         ctx.fillRect(this.x, this.y, this.w, this.l);
         ctx.strokeRect(this.x, this.y, this.w, this.l);
@@ -25,24 +25,26 @@ class Paddle {
         this.y = newY;
     }
 
+    move() {
+        let newY = this.y + this.vy;
+
+        if (newY < 0) return;
+        if (newY + this.l > boardHeight) return;
+
+        this.y = newY;
+    }
     moveCPU(ball) {
-        // Use the properties of the ball to set a new velocity
-        // Helpful pieces:
-        //   Math.min() and Math.max() to limit the velocity
-        //   ball.y to see where the ball is
-        //   ball.vy to see where the ball is going
+        let cpu = Math.abs(ball.vy) + 1;
+        if (cpu > 3) {
+            cpu = 3;
+        }
+        if (this.y + this.l/2 - 20 < ball.y) {
+            this.vy = cpu;
+        }
+        if (this.y + this.l/2 + 20 > ball.y) {
+            this.vy = -cpu;
+        }
 
-        //this.vy = 0; // Modify this line to add your own code
-
-        //let newY = this.y + this.vy;
-
-        //if (newY < 0) return;
-        //if (newY + this.l > boardHeight) return;
-
-        //this.y = newY;
-
-
-        // Finally, call move to move the paddle normally
-        //this.move();
+        this.move();
     }
 }
